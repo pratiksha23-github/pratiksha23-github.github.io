@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="singlePlayScreen.css"><!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link rel="stylesheet" type="text/css" href="secondRes.css">
+    <!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+<!-- body -->
+
+<body>
+    <!-- top navigation bar -->
+    <nav class="navigation-bar">
+        <!-- this div contains the logo and title os the page -->
+        <div class="title-combo">
+            <div class="website-logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/295/295129.png">
+            </div>
+            <div class="website-name">
+                <h2>
+                    <a href="index.html">
+                        Pratiksha
+                    </a>
+                </h2>
+                <h6 style="color: magenta;">
+                    <a href="index.html">Music Player</a>
+                </h6>
+            </div>
+        </div>
+        <!-- this is the animated favourites text -->
+        <div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <div class="search-bar">
+            <div>
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <!-- this is for notification bell -->
+        <div class="notification-bell">
+            <img src="https://cdn-icons-png.flaticon.com/512/1157/1157051.png"> Notifications
+
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture">
+            <img src="https://cdn.dribbble.com/users/875654/screenshots/5003101/singer_icon_1.jpg">
+        </div>
+    </nav>
+    <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+    <!-- I have separated these sections using the aside tag for each section -->
+    <main>
+        <!-- aside section 1 -->
+        <aside class="aside section-1">
+            <!-- this is for the jumbotron -->
+            <div class="jumbotron">
+                <div class=jumbotron-image>
+                    <img src="https://freepngimg.com/thumb/singing/24209-7-singing-photo-thumb.png" alt="fronImg">
+                    <!-- there is nothing in this div because all the images and all are added by css -->
+                </div>
+                <!-- jumbotron details -->
+                <div class="jumbotron-detail">
+                    <!-- descriptive part of the jumbotron this will contain name , number of followers and all -->
+                    <div class="descriptive-part">
+                        <div class="song-name-main">
+                            <h1>ColdPlay</h1>
+                        </div>
+                        <div class="followers">
+                            21m Followers
+                        </div>
+                        <p class="author">British Band</p>
+                        <!-- short description of the current author -->
+                        <p class="desc">
+                            Coldplay are a British rock band formed in London in 1996. Vocalist, rhythm guitarist and
+                            pianist Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman, and drummer Will
+                            Champion met at University College London and began playing music together from 1996 to
+                            1998, first calling themselves Pectoralz and then Starfish before finally changing their
+                            name to Coldplay
+                        </p>
+                    </div>
+                    <!-- action part -->
+                    <div class="action-part">
+                        <!-- action buttons -->
+                        <div class="btns">
+                            <button>Play All</button>
+                            <button>Follow</button>
+                        </div>
+                        <p>
+                            247 Tracks | 128 Albums
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- now the playlist part begins -->
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            01
+                        </div>
+                        <div>
+                            <img
+                                src="https://lastfm.freetls.fastly.net/i/u/avatar170s/d914e56587a487d8361c8c85317e21c2">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Alone
+                            </h5>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIloO4TD9JERW3VyxqYQgZQEdYLg9QVnJC9Ff6uD7OrA&usqp=CAU&ec=48665701">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                White Iverson
+                            </h5>
+                            <p>
+                                Post Malone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:44
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img
+                                src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F06%2Fpost-malone-performs-go-flex-jimmy-kimmel-live-000.jpg?w=960&cbr=1&q=90&fit=max">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Go Flex
+                            </h5>
+                            <p>
+                                Post Malone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:55
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img
+                                src="data:image/jpeg;base64,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">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Better Now
+                            </h5>
+                            <p>
+                                Post Malone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:37
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img
+                                src="https://www.pngitem.com/pimgs/m/153-1533261_karaoke-singer-png-karaoke-singer-transparent-png.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Big lie
+                            </h5>
+                            <p>
+                                Post Malone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:27
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            06
+                        </div>
+                        <div>
+                            <img
+                                src="data:image/jpeg;base64,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">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Deja Vu
+                            </h5>
+                            <p>
+                                Post Malone & Justin Beiber
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        4:31
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            07
+                        </div>
+                        <div>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSykveKMn9KFEeP9Zs_JqhoRb3suFG6DVcMutOaJTEzow&usqp=CAU&ec=48665701">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Pysco
+                            </h5>
+                            <p>
+                                Post Malone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:28
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            08
+                        </div>
+                        <div>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZ9FsTT5X5MOviankye5VPtETBwy6viCs88zTIZQO2w&usqp=CAU&ec=48665701">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Rockstar
+                            </h5>
+                            <p>
+                                Post Malone & 21 Savage
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:48
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            09
+                        </div>
+                        <div>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvXZnKLfythJtHVYiQ_G8xavX4z5RC-v62LZVrrfwmg&usqp=CAU&ec=48665701">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Blinding Lights
+                            </h5>
+                            <p>
+                                Weeknd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:20
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            10
+                        </div>
+                        <div>
+                            <img src="https://i.ytimg.com/vi/UsprGgsLQNs/maxresdefault.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Alone Again
+                            </h5>
+                            <p>
+                                Weeknd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        4:10
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            11
+                        </div>
+                        <div>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1IXpNYIPyNIrqr9mMY5zR2Gvs6ft25gHuEGgId4gL2A&usqp=CAU&ec=48665701">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Too Late
+                            </h5>
+                            <p>
+                                Weeknd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        4:00
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            12
+                        </div>
+                        <div>
+                            <img
+                                src="https://img.favpng.com/8/7/3/microphone-singer-songwriter-vocal-coach-music-png-favpng-CxV2iH2BaR4SGGYMBSQGdTKrf.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Hardest To Love
+                            </h5>
+                            <p>
+                                Weeknd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:31
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- one aside section is complete -->
+        <!-- now the second aside section will start from here -->
+        <!-- the page is responsive. please try reducing the width of the page -->
+        <!-- the aside section will collapse and a "more button will be shown to you." -->
+        <!-- clicking on this more button, you will be shown the aside section 2  -->
+        <!-- its position will be absolute at lower resolutions -->
+        <!-- this is the label for that more button -->
+        <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+        <!-- this is that more button -->
+        <!-- and this is the check box. this will always be hidden -->
+        <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+        <!-- which will invoke the aside section 2 on lower resolutions -->
+        <input type="checkbox" id="more">
+        <!-- </div> -->
+        <aside class="aside section-2">
+            <!-- similar class will be applicable to both similar artists and recently played -->
+            <div class="similar">
+                <!-- section heading, which also contains the view all button -->
+                <div class="section-heading">
+                    <h1>Similar Artists</h1>
+                    <div class="view-all-button">
+                        View All
+                    </div>
+                </div>
+                <!-- list is the container for the contents of similar artists -->
+                <div class="list">
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img
+                                src="https://img.favpng.com/8/7/3/microphone-singer-songwriter-vocal-coach-music-png-favpng-CxV2iH2BaR4SGGYMBSQGdTKrf.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Love me
+                            </h5>
+                            <p class="author-name">
+                                Justin Beiber
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                2:14
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88mdGCCViyyAMJC0Bz492douScIsaE8bNC7uLjnfemg&usqp=CAU&ec=48665701">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Gotti
+                            </h5>
+                            <p class="author-name">
+                                6ix9ine
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:00
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="media/songs/shit.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                WAP
+                            </h5>
+                            <p class="author-name">
+                                Cardi B
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- recently played section -->
+                <div class="similar">
+                    <!-- section headings, which also contains the view all button -->
+                    <div class="section-heading">
+                        <h1>Recently Played</h1>
+                        <div class="view-all-button">
+                            View All
+                        </div>
+                    </div>
+                    <!-- again list is a container for all the contents of recently played section -->
+                    <div class="list">
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    01
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lla5BMNiltApDOZp2XwbBBXoqfXbqnW0DCNAUl0M9A&usqp=CAU&ec=48665701">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        I'll wait
+                                    </h5>
+                                    <p>
+                                        Kygo
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    02
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJz44PnDG6HsIxD44gYgHp5pTUkhMCRhuosojn1vZNqYxwQSCFBIsr4fBO6jgSbCN85XMto31sbqg&usqp=CAU&ec=48665701">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Let Me Go
+                                    </h5>
+                                    <p>
+                                        NoMethod
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    03
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjh8xkoQ9B20s10_smWZAPhhAVBeer4OIGGRxvj7B_Ng&usqp=CAU&ec=48665701">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        ILY
+                                    </h5>
+                                    <p>
+                                        Surf Mesa
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    04
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJHFNPlfQfOXVutLDghF98e-MokLV_jQilA-YQ04TdQ&usqp=CAU&ec=48665701">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Roar
+                                    </h5>
+                                    <p>
+                                        Ketty Perry
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    05
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://www.pngitem.com/pimgs/m/153-1533261_karaoke-singer-png-karaoke-singer-transparent-png.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Toosie Slide
+                                    </h5>
+                                    <p>
+                                        Drake
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    06
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://freepngimg.com/thumb/singing/24614-2-singing-transparent-image-thumb.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Uptwon Funk
+                                    </h5>
+                                    <p>
+                                        Bruno
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    07
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSin0eMhacFaUiFB2AcOyRMy-OSSTnMiWHotV-qkCWkjns2Ab5RvU9fLjKiK99YYEwM2B90imKGips&usqp=CAU&ec=48665701">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Baarish
+                                    </h5>
+                                    <p>
+                                        Half Girlfriend
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    08
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://img.favpng.com/7/5/5/musician-song-singer-jukebox-png-favpng-eKdibBdNFkZqXVXgCCXBcWNcL.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Gulliyon
+                                    </h5>
+                                    <p>
+                                        Ek Villan
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    09
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRH1WR9YUp_qxNqHvRwd4P_5A9L-eVI4DJX7wWENkxGE5TCDLWNlO6wSQ4sORagPdUT4IxDMzGdLY&usqp=CAU&ec=48665701">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        All-is-well
+                                    </h5>
+                                    <p>
+                                        3idiots
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+
+
+    <!-- main part of the page is over. -->
+    <!-- this is the footer part. -->
+    <!-- its position will be fixed to the screen bottom. -->
+    <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91RSWn1g0cywHoZU_6Hu-007rMrk5VXIZdPy6rKIs9wAuo_kYPmzPOoB_CfAI39KJTcKl_Cnqff8&usqp=CAU&ec=48665701">
+            </div>
+            <!-- song name and author -->
+            <div class="song-desc">
+                <div>
+                    White Iverson
+                </div>
+                <div>
+                    Post Malone
+                </div>
+            </div>
+            <!-- heart icon and ban icon -->
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
